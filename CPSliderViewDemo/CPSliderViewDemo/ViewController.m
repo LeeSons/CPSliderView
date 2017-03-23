@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    CPSliderView *slider = [[CPSliderView alloc] initWithFrame:CGRectMake(20, 100, self.view.frame.size.width - 40, 50) style:(CPSliderViewStyleHeart) count:5 valueChangeBlock:^(CGFloat value) {
+    CPSliderView *slider = [[CPSliderView alloc] initWithFrame:CGRectMake(20, 100, self.view.frame.size.width - 40, 30) style:(CPSliderViewStyleHeart) count:5 valueChangeBlock:^(CGFloat value) {
         NSLog(@"%.f", value);
     }];
     slider.trajectoryColor = [UIColor lightGrayColor];

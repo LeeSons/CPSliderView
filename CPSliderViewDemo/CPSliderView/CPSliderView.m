@@ -58,9 +58,9 @@
         _dropView.hidden = YES;
         _dropView.contentVerticalAlignment = UIControlContentVerticalAlignmentTop;
         UIEdgeInsets insets = _dropView.contentEdgeInsets;
-        insets.top = _dropView.frame.size.width * 0.25f + 1;
+        insets.top = _dropView.frame.size.width * 0.35f;
         _dropView.contentEdgeInsets = insets;
-        _dropView.titleLabel.font = [UIFont systemFontOfSize:13];
+        _dropView.titleLabel.font = [UIFont systemFontOfSize:frame.size.height * (15.0 / 40.0)];
         [_dropView setTitleColor:[UIColor whiteColor] forState:(UIControlStateNormal)];
         [self strokDropLayer];
         [_strokView addSubview:_dropView];
